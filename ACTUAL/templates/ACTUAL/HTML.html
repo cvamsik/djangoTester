@@ -1,0 +1,21 @@
+<h3>Stock Calculator App- 014488487</h3>>
+<h3>
+  {{error}}
+
+</h3>
+
+<table>
+  {% for key, value in outputs.items %}
+  <tr>
+    <th> {{ key }} </th>
+    <td> {{ value }} </td>
+  </tr>
+  {% endfor %}
+</table>
+
+<h3>
+
+  <form action="result">
+    Enter Stock Symbol: <input type="text" name="symbol" required><br></br>
+    <input type="submit">
+  </form>
